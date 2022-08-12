@@ -6,21 +6,24 @@ Your challenge is to build the back end for an e-commerce site. You’ll take a 
 Because this application won’t be deployed, you’ll also need to create a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met. You’ll need to submit a link to the video and add it to the README of your project.
 
 ## User Story
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
+AS A manager at an internet retail company <br>
+I WANT a back end for my e-commerce website that uses the latest technologies <br>
 SO THAT my company can compete with other e-commerce companies
 ## Acceptance Criteria
-GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-THEN I am able to successfully create, update, and delete data in my database
+GIVEN a functional Express.js API <br>
+WHEN I add my database name, MySQL username, and MySQL password to an environment variable file <br>
+THEN I am able to connect to a database using Sequelize <br>
+WHEN I enter schema and seed commands <br>
+THEN a development database is created and is seeded with test data <br>
+WHEN I enter the command to invoke the application <br>
+THEN my server is started and the Sequelize models are synced to the MySQL database <br>
+WHEN I open API GET routes in Insomnia Core for categories, products, or tags <br>
+THEN the data for each of these routes is displayed in a formatted JSON <br>
+WHEN I test API POST, PUT, and DELETE routes in Insomnia Core <br>
+THEN I am able to successfully create, update, and delete data in my database <br>
+
+## What I Struggled With
+This program doesn't work entirely as it should. For some reason the program is able to get every seed and render it through insomnia but the POST,PUT, & DELETE routes are being funky and I'm not sure why. Right now the only one that works is the 'tags' route. The 'category' route also works but when doing the POST route the 500 error is returned even though the category is read in successfully and is able to be put and deleted. The only routes that absolutely do not work are the product routes. I'm not sure how to fix these bugs but hopefully I can come back and figure it out.
 
 ## Screen Shots
 

@@ -4,25 +4,24 @@ const { Category, Product } = require('../../models');
 const { update } = require('../../models/Category');
 
 // The `/api/categories` endpoint
-
 router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
   Category.findAll({
-    include: 
-      {
-        model: Product,
-        attributes: ['id', 'product_name', 'price','stock','category_id']
-      },
-    
+    include:
+    {
+      model: Product,
+      attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+    },
+
   })
-    .then(dbCategoryData =>{
-    if(!dbCategoryData){
-      res.status(404).json({message: "Cannot find category"});
-      return;
-    }
-    res.json(dbCategoryData);
-  })
+    .then(dbCategoryData => {
+      if (!dbCategoryData) {
+        res.status(404).json({ message: "Cannot find category" });
+        return;
+      }
+      res.json(dbCategoryData);
+    })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -58,6 +57,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
+  console.log("created");
   Category.create({
     category_name: req.body.category_name,
   })
