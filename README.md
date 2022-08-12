@@ -26,5 +26,13 @@ THEN I am able to successfully create, update, and delete data in my database <b
 This program doesn't work entirely as it should. For some reason the program is able to get every seed and render it through insomnia but the POST,PUT, & DELETE routes are being funky and I'm not sure why. Right now the only one that works is the 'tags' route. The 'category' route also works but when doing the POST route the 500 error is returned even though the category is read in successfully and is able to be put and deleted. The only routes that absolutely do not work are the product routes. I'm not sure how to fix these bugs but hopefully I can come back and figure it out.
 
 ## Screen Shots
+<img width="1191" alt="Screen Shot 2022-08-12 at 3 59 05 PM" src="https://user-images.githubusercontent.com/90733086/184454794-7d92d37f-19a9-4791-909a-6cd0f <br>
+<img width="1188" alt="Screen Shot 2022-08-12 at 3 58 45 PM" src="https://user-images.githubusercontent.com/90733086/184454811-c514a856-bd87-458e-8b5b-2842d5fd4c2e.png">
+fc6e2cc.png"> <br>
+<img width="1188" alt="Screen Shot 2022-08-12 at 3 58 31 PM" src="https://user-images.githubusercontent.com/90733086/184454838-aad9c9a9-c576-4b51-9e87-c993e6082e08.png">
+
+
 
 ## Video Link
+https://user-images.githubusercontent.com/90733086/184454728-c7c5fdf2-c795-46de-871a-712f38111c44.mp4
+
